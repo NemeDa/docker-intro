@@ -1,15 +1,19 @@
 # Quick Start Docker & RancherOS
 
-----
+---
+
 ### Was ist docker-machine?
 
 https://docs.docker.com/machine/overview/
+
+> @TBD: add docker-toolbox and docker-desktop info.
 
 ### Was ist Rancher / RancherOS?
 
 <https://rancher.com/rancher-os/>
 
-----
+---
+
 ### Quick Start
 
 1. powershell (oder z.B.) git bash starten, passenden Ordner auswählen, und los gehts:
@@ -26,14 +30,15 @@ $ docker-machine create -d virtualbox \
 $ docker-machine ssh ROSDemo
 ```
 
-----
+---
+
 ### Rancher OS Intro
 
 Nach der Verbindung mit RancherOS via ssh:
 
 ```bash
 # ip adress check
-$ sudo ifconfig 
+$ sudo ifconfig
 
 # base system of rancher os
 $ sudo system-docker ps
@@ -47,9 +52,10 @@ sudo docker run hello-world
 
 Mehr unter: <https://rancher.com/docs/os/v1.x/en/quick-start-guide/
 
->  OPTIONAL: Linux Dashboard einrichten
+> OPTIONAL: Linux Dashboard einrichten
 
-----
+---
+
 #### Docker - Get Started - Part 1
 
 Details: <https://docs.docker.com/get-started/>
@@ -76,14 +82,15 @@ docker container ls --all
 docker container ls -aq
 ```
 
-----
+---
+
 #### Docker - Get Started - Part 2
 
 Details: <https://docs.docker.com/get-started/part2>
 
 Behandelt:
 
-- Dockerfile 
+- Dockerfile
 - Image / Container erzeugen
 
 ```bash
@@ -105,13 +112,15 @@ docker push username/repository:tag            # Upload tagged image to registry
 docker run username/repository:tag                   # Run image from a registry
 ```
 
-----
+---
+
 #### Docker - Get Started - Part 3
 
 Details: <https://docs.docker.com/get-started/part3>
 
 Behandelt:
-- docker compose 
+
+- docker compose
 - swarm "Einstieg"
 
 ```bash
@@ -125,17 +134,21 @@ docker stack rm <appname>                             # Tear down an application
 docker swarm leave --force      # Take down a single node swarm from the manager
 ```
 
-----
+---
+
 #### TYOD - Try Your Own Docker
 
 - **Get Started - Part 4, 5 und 6**
 - **Container einrichten:**
   - ngnix Reverse Proxy
-  - Traefik (Orchestration?)
+  - Traefik (Reverse Proxy)
+  - MQTT Server
   - Nextcloud einrichten - mit **persistent data**!
   - Gitlab
   - CMS
   - LEMP bzw. LAMP aufgesplittet auf Container (zumindest DB extra)
+
 - **Orchestration (Container Verwaltung):**
+
   - Rancher
   - Kubernetes
