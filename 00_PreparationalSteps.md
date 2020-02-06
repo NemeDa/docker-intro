@@ -21,7 +21,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 
 ----
 
-#### docker-machine - Installation
+#### docker-toolbox - Installation
 
 In Powershell (admin) folgenden Befehl eingeben
 
@@ -30,7 +30,10 @@ In Powershell (admin) folgenden Befehl eingeben
 choco install virtualbox -y
 
 # "must have"
-choco install docker-machine -y
+choco install docker-toolbox -y
+
+# another "must-have"
+choco install vscode -y
 
 # [optional] git Versionsverwaltung (git bash und ssh funktioniert dann sicher)
 choco install git -y
